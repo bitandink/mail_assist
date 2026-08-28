@@ -1,0 +1,26 @@
+{
+  "name": "mail-kakao-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Naver/Nate IMAP mail monitor that sends important mail summaries to KakaoTalk.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "check": "tsc --noEmit",
+    "kakao:auth": "tsx scripts/kakao-auth.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "imapflow": "^1.0.181",
+    "mailparser": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.4.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
